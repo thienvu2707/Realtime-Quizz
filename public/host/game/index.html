@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Play Quizz Games</title>
+    <link rel="stylesheet" href="../../css/hostGameView.css">
+  </head>
+  <body>
+
+    <h4 id="questionNum"></h4>
+    <h4 id="playersAnswered">Players Answered: 0 / x</h4>
+    <h3 id="timerText">Time left: <span id="num"> 20</span></h3>
+
+    <h2 id="question">Question</h2>
+    <h3 id="answer1">Answer</h3>
+    <br>
+    <h3 id="answer2">Answer</h3>
+    <br>
+    <h3 id="answer3">Answer</h3>
+    <br>
+    <h3 id="answer4">Answer</h3>
+    <br>
+
+    <div class="square" id="square1"></div>
+    <div class="square" id="square2"></div>
+    <div class="square" id="square3"></div>
+    <div class="square" id="square4"></div>
+
+    <button onclick="nextQuestion()" id="nextQButton">Next Question</button>
+
+    <h1 id="raking">Top 5</h1>
+
+    <h3 id="winner1">1.</h3>
+    <h3 id="winner2">1.</h3>
+    <h3 id="winner3">1.</h3>
+    <h3 id="winner4">1.</h3>
+    <h3 id="winner5">1.</h3>
+
+    <script src = "../../socket.io/socket.io.js"></script>
+    <script src = "../../js/libs/jqueryLibrary.js"></script>
+    <script src = "../../js/libs/deparam.js"></script>
+    <script src = "../../js/hostGame.js"></script>
+  </body>
+</html>

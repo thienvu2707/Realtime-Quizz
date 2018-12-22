@@ -1,0 +1,50 @@
+@keyframes bgcolor {
+  0% {
+    background-color: #5ebcff;
+  }
+
+  30% {
+    background-color: #7fdd4f;
+  }
+
+  60% {
+    background-color: #ed6b15;
+  }
+
+  90% {
+    background-color: #f23050;
+  }
+
+  100% {
+    background-color: #ae66f4;
+  }
+}
+
+body {
+  animation: bgcolor 10s infinite;
+  animation-direction: alternate;
+}
+
+#title {
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+}
+
+.loader {
+  display: block;
+  height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #3A3B3A;
+  width: 40px;
+  height: 40px;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

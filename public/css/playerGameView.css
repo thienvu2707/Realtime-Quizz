@@ -1,0 +1,55 @@
+html, body { height: 90%; padding: 0; margin: 0; }
+button{
+    width: 50%; height: 50%; float: left;
+}
+#button {
+  text-align: center;
+}
+
+#nameText {
+  font-family: sans-serif;
+  padding: 0px 10px;
+  text-align: center;
+  margin-left: -200px;
+}
+
+#scoreText {
+  font-family: sans-serif;
+  padding: 0px 10px;
+  text-align: center;
+  margin-left: -200px;
+}
+
+#message {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 35px;
+}
+
+#answer1 {
+  background-color: #1d8c17;
+  text-align: center;
+  color: white;
+  font-size: 100px;
+}
+
+#answer2 {
+  background-color: #e5221b;
+  text-align: center;
+  color: white;
+  font-size: 100px;
+}
+
+#answer3 {
+  background-color: #2a84dd;
+  text-align: center;
+  color: white;
+  font-size: 100px;
+}
+
+#answer4 {
+  background-color: #ea8f33;
+  text-align: center;
+  color: white;
+  font-size: 100px;
+}

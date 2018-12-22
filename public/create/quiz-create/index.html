@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Create game quizz</title>
+    <link rel = "stylesheet" href = "../../css/quizCreate.css">
+  </head>
+  <body onload="setBGColor()">
+    <h1 id="title">Quizz Create Question</h1>
+
+    <div class="form-field">
+      <form>
+        <label id="quizTitle">Quizz Title</label>
+        <input type="text" name="name" id="name" required="required" autofocus/>
+      </form>
+    </div>
+    <br>
+    <br>
+    <div id = "allQuestions">
+        <div id="question-field">
+          <form>
+            <label>Question 1: </label>
+            <input class = "question" id = "q1" type = "text" required="required" autofocus/>
+            <br>
+            <br>
+            <label>Answer 1: </label>
+            <input id = "1a1" type = "text" required="required" autofocus/>
+            <label>Answer 2: </label>
+            <input id = "1a2" type = "text" required="required" autofocus/>
+            <br>
+            <br>
+            <label>Answer 3: </label>
+            <input id = "1a3"  type = "text" required="required" autofocus/>
+            <label>Answer 4: </label>
+            <input id = "1a4"  type = "text" required="required" autofocus/>
+            <br>
+            <br>
+            <label>Correct Answer (1-4) :</label>
+            <input class = "correct" id = "correct1"  type = "number" min="1" max="4" required="required" autofocus/>
+          </form>
+        </div>
+    </div>
+    <br>
+    <button onclick = "addQuestion()">Add more question</button>
+
+    <br>
+    <br>
+
+    <div class="form-field">
+        <button onclick = "updateDatabase()">Create Quizz to Play</button>
+    </div>
+
+    <br>
+
+    <button onclick = 'cancelQuiz()'>Cancel creating quiz and return</button>
+
+    <script src = "../../socket.io/socket.io.js"></script>
+    <script src = "../../js/quizCreate.js"></script>
+  </body>
+</html>
