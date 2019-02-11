@@ -8,16 +8,19 @@ button{
 
 #nameText {
   font-family: sans-serif;
+  font-size: 25px;
   padding: 0px 10px;
   text-align: center;
-  margin-left: -200px;
+  margin-left: -100px;
+
 }
 
 #scoreText {
   font-family: sans-serif;
   padding: 0px 10px;
+  font-size: 25px;
   text-align: center;
-  margin-left: -200px;
+  margin-left: -100px;
 }
 
 #message {

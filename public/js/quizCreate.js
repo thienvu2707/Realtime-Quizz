@@ -94,9 +94,6 @@ function updateDatabase(){
 
     var quiz = {id: 0, "name": name, "questions": questions};
     socket.emit("newQuiz", quiz);
-  
-
-
 }
 
 //Called when user wants to exit quiz creator

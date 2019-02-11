@@ -159,10 +159,10 @@ io.on("connection", function(socket) {
           if (err) throw err;
 
           var question = res[0].questions[0].question;
-          var answer1 = res[0].questions[0].answers[0];
-          var answer2 = res[0].questions[0].answers[1];
-          var answer3 = res[0].questions[0].answers[2];
-          var answer4 = res[0].questions[0].answers[3];
+          var answer1  = res[0].questions[0].answers[0];
+          var answer2  = res[0].questions[0].answers[1];
+          var answer3  = res[0].questions[0].answers[2];
+          var answer4  = res[0].questions[0].answers[3];
           var correctAnswer = res[0].questions[0].correct;
 
           socket.emit("gameQuestions", {

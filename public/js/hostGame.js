@@ -90,6 +90,46 @@ socket.on("questionOver", function(playerData, correct){
     total += 1;
   }
 
+  if(correct == 1) {
+
+    document.getElementById('square2').style.filter = "grayscale(100%)";
+    document.getElementById('square3').style.filter = "grayscale(100%)";
+    document.getElementById('square4').style.filter = "grayscale(100%)";
+    document.getElementById('square1').innerHTML = answer1;
+    document.getElementById('square2').innerHTML = answer2;
+    document.getElementById('square3').innerHTML = answer3;
+    document.getElementById('square4').innerHTML = answer4;
+  } else if (correct == 2) {
+
+    document.getElementById('square1').style.filter = "grayscale(100%)";
+    document.getElementById('square3').style.filter = "grayscale(100%)";
+    document.getElementById('square4').style.filter = "grayscale(100%)";
+    document.getElementById('square1').innerHTML = answer1;
+    document.getElementById('square2').innerHTML = answer2;
+    document.getElementById('square3').innerHTML = answer3;
+    document.getElementById('square4').innerHTML = answer4;
+
+  } else if(correct == 3) {
+
+    document.getElementById('square2').style.filter = "grayscale(100%)";
+    document.getElementById('square1').style.filter = "grayscale(100%)";
+    document.getElementById('square4').style.filter = "grayscale(100%)";
+    document.getElementById('square1').innerHTML = answer1;
+    document.getElementById('square2').innerHTML = answer2;
+    document.getElementById('square3').innerHTML = answer3;
+    document.getElementById('square4').innerHTML = answer4;
+
+  } else if(correct == 4) {
+
+    document.getElementById('square2').style.filter = "grayscale(100%)";
+    document.getElementById('square3').style.filter = "grayscale(100%)";
+    document.getElementById('square1').style.filter = "grayscale(100%)";
+    document.getElementById('square1').innerHTML = answer1;
+    document.getElementById('square2').innerHTML = answer2;
+    document.getElementById('square3').innerHTML = answer3;
+    document.getElementById('square4').innerHTML = answer4;
+  }
+
   //get value for graph
   answer1 = answer1 / total * 150;
   answer2 = answer2 / total * 150;
@@ -105,30 +145,6 @@ socket.on("questionOver", function(playerData, correct){
   document.getElementById('square2').style.height = answer2 + "px";
   document.getElementById('square3').style.height = answer3 + "px";
   document.getElementById('square4').style.height = answer4 + "px";
-
-  if(correct == 1) {
-
-    document.getElementById('square2').style.filter = "grayscale(100%)";
-    document.getElementById('square3').style.filter = "grayscale(100%)";
-    document.getElementById('square4').style.filter = "grayscale(100%)";
-  } else if (correct == 2) {
-
-    document.getElementById('square1').style.filter = "grayscale(100%)";
-    document.getElementById('square3').style.filter = "grayscale(100%)";
-    document.getElementById('square4').style.filter = "grayscale(100%)";
-
-  } else if(correct == 3) {
-
-    document.getElementById('square2').style.filter = "grayscale(100%)";
-    document.getElementById('square1').style.filter = "grayscale(100%)";
-    document.getElementById('square4').style.filter = "grayscale(100%)";
-
-  } else if(correct == 4) {
-
-    document.getElementById('square2').style.filter = "grayscale(100%)";
-    document.getElementById('square3').style.filter = "grayscale(100%)";
-    document.getElementById('square1').style.filter = "grayscale(100%)";
-  }
 
   document.getElementById('nextQButton').style.display = "block";
 });
