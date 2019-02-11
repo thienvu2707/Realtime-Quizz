@@ -95,39 +95,39 @@ socket.on("questionOver", function(playerData, correct){
     document.getElementById('square2').style.filter = "grayscale(100%)";
     document.getElementById('square3').style.filter = "grayscale(100%)";
     document.getElementById('square4').style.filter = "grayscale(100%)";
-    document.getElementById('square1').innerHTML = answer1;
-    document.getElementById('square2').innerHTML = answer2;
-    document.getElementById('square3').innerHTML = answer3;
-    document.getElementById('square4').innerHTML = answer4;
+    document.getElementById('squareLabel1').innerHTML = answer1;
+    document.getElementById('squareLabel2').innerHTML = answer2;
+    document.getElementById('squareLabel3').innerHTML = answer3;
+    document.getElementById('squareLabel4').innerHTML = answer4;
   } else if (correct == 2) {
 
     document.getElementById('square1').style.filter = "grayscale(100%)";
     document.getElementById('square3').style.filter = "grayscale(100%)";
     document.getElementById('square4').style.filter = "grayscale(100%)";
-    document.getElementById('square1').innerHTML = answer1;
-    document.getElementById('square2').innerHTML = answer2;
-    document.getElementById('square3').innerHTML = answer3;
-    document.getElementById('square4').innerHTML = answer4;
+    document.getElementById('squareLabel1').innerHTML = answer1;
+    document.getElementById('squareLabel2').innerHTML = answer2;
+    document.getElementById('squareLabel3').innerHTML = answer3;
+    document.getElementById('squareLabel4').innerHTML = answer4;
 
   } else if(correct == 3) {
 
     document.getElementById('square2').style.filter = "grayscale(100%)";
     document.getElementById('square1').style.filter = "grayscale(100%)";
     document.getElementById('square4').style.filter = "grayscale(100%)";
-    document.getElementById('square1').innerHTML = answer1;
-    document.getElementById('square2').innerHTML = answer2;
-    document.getElementById('square3').innerHTML = answer3;
-    document.getElementById('square4').innerHTML = answer4;
+    document.getElementById('squareLabel1').innerHTML = answer1;
+    document.getElementById('squareLabel2').innerHTML = answer2;
+    document.getElementById('squareLabel3').innerHTML = answer3;
+    document.getElementById('squareLabel4').innerHTML = answer4;
 
   } else if(correct == 4) {
 
     document.getElementById('square2').style.filter = "grayscale(100%)";
     document.getElementById('square3').style.filter = "grayscale(100%)";
     document.getElementById('square1').style.filter = "grayscale(100%)";
-    document.getElementById('square1').innerHTML = answer1;
-    document.getElementById('square2').innerHTML = answer2;
-    document.getElementById('square3').innerHTML = answer3;
-    document.getElementById('square4').innerHTML = answer4;
+    document.getElementById('squareLabel1').innerHTML = answer1;
+    document.getElementById('squareLabel2').innerHTML = answer2;
+    document.getElementById('squareLabel3').innerHTML = answer3;
+    document.getElementById('squareLabel4').innerHTML = answer4;
   }
 
   //get value for graph
@@ -146,6 +146,11 @@ socket.on("questionOver", function(playerData, correct){
   document.getElementById('square3').style.height = answer3 + "px";
   document.getElementById('square4').style.height = answer4 + "px";
 
+  document.getElementById('squareLabel1').style.display = "inline-block";
+  document.getElementById('squareLabel2').style.display = "inline-block";
+  document.getElementById('squareLabel3').style.display = "inline-block";
+  document.getElementById('squareLabel4').style.display = "inline-block";
+
   document.getElementById('nextQButton').style.display = "block";
 });
 
@@ -155,6 +160,10 @@ function nextQuestion() {
   document.getElementById('square2').style.display = "none";
   document.getElementById('square3').style.display = "none";
   document.getElementById('square4').style.display = "none";
+  document.getElementById('squareLabel1').style.display = "none";
+  document.getElementById('squareLabel2').style.display = "none";
+  document.getElementById('squareLabel3').style.display = "none";
+  document.getElementById('squareLabel4').style.display = "none";
 
   document.getElementById('answer1').style.filter = "none";
   document.getElementById('answer2').style.filter = "none";
@@ -165,6 +174,10 @@ function nextQuestion() {
   document.getElementById('square2').style.filter = "none";
   document.getElementById('square3').style.filter = "none";
   document.getElementById('square4').style.filter = "none";
+  document.getElementById('squareLabel1').style.filter = "none";
+  document.getElementById('squareLabel2').style.filter = "none";
+  document.getElementById('squareLabel3').style.filter = "none";
+  document.getElementById('squareLabel4').style.filter = "none";
 
   document.getElementById('playersAnswered').style.display = "block";
   document.getElementById('timerText').style.display = "block";
@@ -178,6 +191,10 @@ socket.on("GameOver", function(data){
   document.getElementById('square2').style.display = "none";
   document.getElementById('square3').style.display = "none";
   document.getElementById('square4').style.display = "none";
+  document.getElementById('squareLabel1').style.display = "none";
+  document.getElementById('squareLabel2').style.display = "none";
+  document.getElementById('squareLabel3').style.display = "none";
+  document.getElementById('squareLabel4').style.display = "none";
 
   document.getElementById('answer1').style.display = "none";
   document.getElementById('answer2').style.display = "none";

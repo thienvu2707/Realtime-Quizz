@@ -106,6 +106,40 @@ body{
   font-size: 40px;
 }
 
+.squareLabel {
+  border: : none;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  width: 70px;
+  margin: 4px 2px;
+  display: none;
+}
+
+#squareLabel1 {
+  color: white;
+  font-size: 40px;
+  display: inline-block;
+}
+
+#squareLabel2 {
+  color: white;
+  font-size: 40px;
+  display: inline-block;
+}
+
+#squareLabel3 {
+  color: white;
+  font-size: 40px;
+  display: inline-block;
+}
+
+#squareLabel4 {
+  color: white;
+  font-size: 40px;
+  display: inline-block;
+}
+
 #question {
   font-family: sans-serif;
   text-align: center;
@@ -147,7 +181,7 @@ body{
 	-webkit-border-radius:6px;
 	border-radius:6px;
 	border:1px solid #dcdcdc;
-	display:inline-block;
+	display: none;
 	cursor:pointer;
 	color:#666666;
 	font-family:Arial;
